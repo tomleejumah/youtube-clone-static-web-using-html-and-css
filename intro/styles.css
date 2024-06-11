@@ -212,7 +212,7 @@ body {
   position: relative;
 }
 
-.search-button .tooltip,
+/* .search-button .tooltip,
 .voice-search-button .tooltip,
 .notifications-icon-container .tooltip ,
 .notifications-icon-container .tooltip {
@@ -230,11 +230,12 @@ body {
   transition: opacity 0.15s;
   pointer-events: none;
   white-space: nowrap;
-}
+} */
 
 .search-button:hover .tooltip,
 .voice-search-button:hover .tooltip,
-.upload-icon-container:hover .tooltip {
+.upload-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
   opacity: 1;
 }
 
@@ -271,14 +272,10 @@ body {
 
 .tooltip-container:hover .tooltip{
   bottom: -30px;
-  opacity: 0;
-  transition: opacity 0.15s;
+  /* opacity: 0; */
+  transition: opacity 0.3s;
   cursor: pointer;
   visibility: visible;
-  opacity: 1;
-}
-
-.notifications-icon-container:hover .tooltip{
   opacity: 1;
 }
 
@@ -450,6 +447,10 @@ body {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.thumbnail-container{
+  position: relative;
 }
 
 .video-time {
